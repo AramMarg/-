@@ -1,0 +1,11 @@
+using UnityEngine;
+
+public class SuperCube : MonoBehaviour
+{
+    private void Update()
+    {
+        transform.Translate(transform.forward);
+
+        transform.Rotate(Vector3.up);
+    }
+}

@@ -1,0 +1,11 @@
+using UnityEngine;
+
+public class CubeRotation : MonoBehaviour
+{
+    [SerializeField] private float _speedRotation;
+
+    private void Update()
+    {
+        transform.Rotate(_speedRotation * Time.deltaTime * Vector3.up);
+    }
+}
